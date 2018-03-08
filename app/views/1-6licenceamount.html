@@ -1,0 +1,148 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Licence Application
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+<div class="phase-banner">
+  <p>
+    <strong class="phase-tag">BETA</strong>
+    <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+  </p>
+</div>
+         <a href="javascript:history.back()" class="link-back">Back</a>
+      <h1 class="heading-xlarge">
+            Autonomous Truck Licence
+        <span class="heading-secondary">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+        
+        <form>
+  <div class="form-group">
+    <fieldset>
+
+      <legend>
+        <h1 class="heading-medium">
+How many licences are you applying for?
+        </h1>
+      </legend>
+
+      <div class="multiple-choice" data-target="1-5">
+        <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes">
+        <label for="example-contact-by-email">1-5</label>
+      </div>
+      <div class="panel panel-border-narrow js-hidden" id="1-5">
+        <label class="form-label" for="contact-email"></label>
+          <p>
+              Make sure you are aware of the prices regarding licences and driver applications under this question.
+          </p>
+      </div>
+<div class="multiple-choice" data-target="6-10">
+        <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
+        <label for="example-contact-by-phone">6-10</label>
+      </div>
+      <div class="panel panel-border-narrow js-hidden" id="6-10">
+        <label class="form-label" for="contact-phone"></label>
+<p>
+Make sure you are aware of the prices regarding licences and driver applications under this question.
+  </p>
+      </div>
+      <div class="multiple-choice" data-target="11-20">
+        <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
+        <label for="example-contact-by-phone">11-20</label>
+      </div>
+      <div class="panel panel-border-narrow js-hidden" id="11-20">
+        <label class="form-label" for="contact-phone"></label>
+<p>
+Make sure you are aware of the prices regarding licences and driver applications under this question.
+  </p>
+      </div>
+
+        <div class="multiple-choice" data-target="21-30">
+        <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
+        <label for="example-contact-by-phone">21-30</label>
+      </div>
+      <div class="panel panel-border-narrow js-hidden" id="21-30">
+        <label class="form-label" for="contact-phone"></label>
+<p>
+Make sure you are aware of the prices regarding licences and driver applications under this question.
+  </p>
+      </div>
+        
+        <div class="multiple-choice" data-target="31">
+        <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
+        <label for="example-contact-by-phone">31+</label>
+      </div>
+      <div class="panel panel-border-narrow js-hidden" id="31">
+        <label class="form-label" for="contact-phone"></label>
+<p>
+Make sure you are aware of the prices regarding licences and driver applications under this question.
+  </p>
+      </div>
+      
+      
+
+    </fieldset>
+  </div>
+</form>
+        
+        <details>
+
+  <summary><span class="summary">Licence Costs</span></summary>
+
+  <div class="panel panel-border-narrow">
+
+    <table>
+  <thead>
+    <tr>
+      <th scope="col">Number of licences</th>
+      <th class="numeric" scope="col">Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1-5</th>
+      <td class="numeric">£75 per driver</td>
+    </tr>
+    <tr>
+      <th scope="row">6-10</th>
+      <td class="numeric">£72 per driver</td>
+
+    </tr>
+    <tr>
+      <th scope="row">11-20</th>
+      <td class="numeric">£69 per driver</td>
+
+    </tr>
+    <tr>
+      <th scope="row">21-30</th>
+      <td class="numeric">£66 per driver</td>
+
+    </tr>
+      <tr>
+      <th scope="row">31+</th>
+      <td class="numeric">£63 per driver</td>
+
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+
+</details>
+
+<br>
+           <a href="check-your-information.html"><input class="button" type="submit" value="Save and continue" > </a>
+
+     
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+

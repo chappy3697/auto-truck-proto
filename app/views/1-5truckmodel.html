@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Licence Application
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+<div class="phase-banner">
+  <p>
+    <strong class="phase-tag">BETA</strong>
+    <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+  </p>
+</div>
+         <a href="javascript:history.back()" class="link-back">Back</a>
+      <h1 class="heading-xlarge">
+            Autonomous Truck Licence
+        <span class="heading-secondary">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+        
+        <section id="truckinformationmodel">
+        <h3 class="heading-medium">Truck Information</h3>
+        <div class="form-group">
+<h4 class="heading-small">Truck Model</h4>
+  <select class="form-control" id="select-box" name="select-box">
+    <option>Select Model</option>
+      <option>Volvo A-01</option>
+    <option>Mercedes-Benz Future Truck 2025</option>
+    <option>Daimler Freightliner</option>
+  </select>
+</div>
+        </section>
+
+        <br>
+           <a href="1-6licenceamount.html"><input class="button" type="submit" value="Save and continue" > </a>
+
+     
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+

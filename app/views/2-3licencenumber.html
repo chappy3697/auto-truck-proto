@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Driver Application
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+<div class="phase-banner">
+  <p>
+    <strong class="phase-tag">BETA</strong>
+    <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+  </p>
+</div>
+         <a href="javascript:history.back()" class="link-back">Back</a>
+      <h1 class="heading-xlarge">
+            Autonomous Truck Licence
+        <span class="heading-secondary">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+    <h2 class="heading-medium">
+            You are applying for: 'COMPANY NAME' <br>
+        <span class="heading-small">Your company has already submitted their details</span>
+      </h2>
+        <p>
+The autonomous truck licence system is currently only in BETA and open to large companies, the eligible companies for this licence have been informed prior and have their unique login to apply for their licences.
+        </p>
+        
+        <p>
+This page contains the application that a driver will have to fill.
+        </p>
+        
+        <p>
+Once the company application has been completed and validated you will receive a unique login code for your employee to use, where they can submit their application to register for the full licence.  
+        </p>
+        
+        <h3 class="heading-medium">Driver Information</h3>
+        
+        <section id="driverlicencenumber">
+        <h4 class="heading-small">Drivers Licence Number</h4>
+
+        
+        <label class="form-label" for="textarea">
+  
+            <p>
+   This can be found on your drivers licence. <a href="#">Click here to find how.</a>
+</p>
+
+            This will be checked to ensure that you are eligible to apply.
+</label>
+        <label class="form-label" for="ni-number">
+  <span class="form-hint">
+    For example, ‘GARDN605109C99LY’.
+  </span>
+</label>
+<textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="1"></textarea>
+        </section>
+        
+        <br>
+        
+       <a href="2-4employeenumber.html"> <input class="button" type="submit" value="Save and continue"> </a>
+
+     
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+

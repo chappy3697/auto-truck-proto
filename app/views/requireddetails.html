@@ -1,0 +1,162 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Required Details
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+        <div class="phase-banner">
+            <p>
+                <strong class="phase-tag">BETA</strong>
+                <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+        </div>
+         <a href="javascript:history.back()" class="link-back">Back</a>
+        
+      <h1 class="heading-xlarge">
+            Autonomous Truck Licence
+        <span class="heading-secondary">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+        
+        
+           
+        <h3 class="heading-medium">What is the service?</h3>
+      <p>
+        A new licence / service that allows a company to apply for a single licence to register their entire fleet of autonomous trucks. 
+        </p>
+        
+        <p>
+        As of now the new service is open to large companies that meet the requirements in this page. 
+        </p>
+        
+        <p>
+            This page contains the details that a driver and store will be required to know. 
+        </p>
+        
+    <h3 class="heading-medium">Is your company eligible for the licence?</h3>
+      <p>
+        The following are the requirements that a company has to meet before they are contacted for participation in this beta.
+        </p>
+        <ul class="list list-bullet">
+            <li>The company needs to be a private limited company</li>
+            <li>The company will need to be registered with the government</li>
+            <li>It will have a valid tax number</li>
+            <li>The company will need to be actively trading</li>
+        </ul>
+    
+            
+    <h3 class="heading-medium">How do the licences work?</h3>
+      <p>The company will have to be wary of how many licences that they need as there will only need to be one application for the main licence. Then once the application has been verified the company will be given unique links that can be used to access the portal for the drivers application. When all information is submitted the application will be verified and the driver will be granted a licence for the chosen truck for the licence. If the company purchases a different truck than what is applied for then they will have to purchase a new licence for that fleet of vehicles.
+          
+          <br><br>With each driver licence that is designated the company will be charged for each licence dependant on the chosen number of licences applied for.</p>
+        
+        <details>
+
+  <summary><span class="summary">Licence Costs</span></summary>
+
+  <div class="panel panel-border-narrow">
+
+    <table>
+  <thead>
+    <tr>
+      <th scope="col">Number of licences</th>
+      <th class="numeric" scope="col">Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1-5</th>
+      <td class="numeric">£75 per driver</td>
+    </tr>
+    <tr>
+      <th scope="row">6-10</th>
+      <td class="numeric">£72 per driver</td>
+
+    </tr>
+    <tr>
+      <th scope="row">11-20</th>
+      <td class="numeric">£69 per driver</td>
+
+    </tr>
+    <tr>
+      <th scope="row">21-30</th>
+      <td class="numeric">£66 per driver</td>
+
+    </tr>
+      <tr>
+      <th scope="row">31+</th>
+      <td class="numeric">£63 per driver</td>
+
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+
+</details>
+
+
+        
+    <h3 class="heading-medium">Points on the drivers licence</h3>
+      <p>When applying for a licence for an autonomous truck you will have to be aware of how many points on the truck drivers licence. The requirements for this is that a driver has to have <strong class="bold-small">NO POINTS</strong> on their licence. </p>
+
+			<div class="notice">
+  <i class="icon icon-important">
+    <span class="visually-hidden">Warning</span>
+  </i>
+  <strong class="bold-small">
+The driver has to have no points on their drivers licence to apply for a licence.
+  </strong>
+        </div>
+        
+        <h3 class="heading-medium">Licence duration</h3>
+      <p>Licences last for a year from when the driver application is verified. At the end of this year there will be a review of the maintenance of the truck and a payment of the original fee for the licence depending on the amount of licences applied for.</p>
+
+			<div class="notice">
+  <i class="icon icon-important">
+    <span class="visually-hidden">Warning</span>
+  </i>
+  <strong class="bold-small">
+Licences last for a year and can be renewed after a maintenance check and payment.
+  </strong>
+        </div>
+        
+         <h3 class="heading-medium">Available Trucks</h3>
+      <p>
+        Currently the government has granted 3 manufacturers of autonomous trucks the ability to use their vehicles in this service. Mercedes, Volvo and Daimler have been verified and are now able to operate on all roads of the UK. These are the only vehicles available to apply for in the current licence.
+        </p>
+
+        
+        <h3 class="heading-medium">Training required</h3>
+      <p>
+        The driver will need to undergo training for the autonomous truck, when purchasing the truck the manufacturer will provide a session for drivers to attend.
+        </p>
+
+			<h3 class="heading-medium">Regulations on the truck</h3>
+        
+        <p>The company is solely responsible for the upkeep of the truck. They are required to take the truck to a verified maintenance centre which can be found from the manufacturer.</p>
+        <h4 class="heading-small">Maintenance</h4>
+      <p>
+Every 3 months the truck will be needed to be taken to a verified centre where they will perform an MOT and to see if it is in working order or if it has any problems.
+        </p>
+        
+        <h3 class="heading-medium">Removing employees from the licence</h3>
+        
+        <p>If the company removes an employee from their payroll it will be automatically updated within the GOV.UK database and will disable the licence.</p>
+        
+        <h3 class="heading-medium">Apply for the licence</h3>
+        
+        <p>Access to the application is open to the public but will only be accepted to companies meeting the requirements above. The information you provide will be verified with the company registered office for legitimacy.</p>
+        <a href="1-1storename.html"><input class="button" type="submit" value="Apply here" > </a>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+

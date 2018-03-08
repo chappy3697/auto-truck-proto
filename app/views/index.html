@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Home Page
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+<div class="phase-banner">
+  <p>
+    <strong class="phase-tag">BETA</strong>
+    <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+  </p>
+</div>
+      <h1 class="heading-xlarge">
+        {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+
+      <p>Use this service to:</p>
+
+      <ul class="list list-bullet">
+        <li>See if your company is eligible to apply for the licence</li>
+        <li>Apply for an autonomous truck licence for your company</li>
+        <li>View the details required for the licence</li>
+      </uL>
+
+      <p>Applying takes around 5 minutes.</p>
+
+      <p>
+        <a class="button button-start" href="requireddetails.html" role="button">Start now</a>
+      </p>
+
+      <h2 class="heading-medium">Before you start</h2>
+
+        <p>Read through the required details</p>
+        
+        <p>See if your company is eligible</p>
+        
+        <p>Speak with your company regarding the purchase of an autonomous truck</p>
+        
+    </div>
+    <div class="column-third">
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

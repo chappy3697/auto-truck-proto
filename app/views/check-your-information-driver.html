@@ -1,0 +1,102 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Check your answers
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <a href="javascript:history.back()" class="link-back">Back</a>
+
+      <h1 class="heading-large">
+        Check your answers before sending your application
+      </h1>
+
+
+      <!-- only add a heading for a list if there is more than one list -->
+      <h2 class="heading-medium">
+        Company Information
+      </h2>
+
+      <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
+      <!--   * `cya-questions-short` for short questions -->
+      <!--   * `cya-questions-long` for long questions -->
+      <!--   * none for single group of q&a -->
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Name
+          </dt>
+          <dd class="cya-answer">
+            Store Name Example
+          </dd>
+          <dd class="cya-change">
+            <a href="driverapplication.html#drivername".>
+              Change<span class="visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+
+           <div>
+          <dt class="cya-question">
+            Date of birth
+          </dt>
+          <dd class="cya-answer">
+            03 / 06 / 1997
+          </dd>
+          <dd class="cya-change">
+            <a href="driverapplication.html#driverdob".>
+              Change<span class="visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+          
+           <div>
+          <dt class="cya-question">
+            Driver Licence Number
+          </dt>
+          <dd class="cya-answer">
+            GARDN605109C99LY
+          </dd>
+          <dd class="cya-change">
+            <a href="driverapplication.html#driverlicencenumber".>
+              Change<span class="visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+        
+           <div>
+          <dt class="cya-question">
+            Driver Employee Number
+          </dt>
+          <dd class="cya-answer">
+            994223880
+          </dd>
+          <dd class="cya-change">
+            <a href="driverapplication.html#driveremployeenumber".>
+              Change<span class="visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+
+
+      <h2 class="heading-medium">Now send your application</h2>
+
+      <p class="text">
+        By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.
+      </p>
+
+      <div class="form-group">
+        <a href="confirmation-page-driver.html" class="button">Accept and send application</a>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

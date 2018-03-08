@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+<div class="phase-banner">
+  <p>
+    <strong class="phase-tag">BETA</strong>
+    <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+  </p>
+</div>
+      <h1 class="heading-xlarge">
+            Autonomous Trucks Licence
+        <span class="heading-secondary">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+    <h2 class="heading-medium">
+            You are applying for: 'COMPANY NAME' <br>
+        <span class="heading-small">Your company has already submitted their details</span>
+      </h2>
+        <p>
+The autonomous truck licence system is currently only in BETA and open to large companies, the eligible companies for this licence have been informed prior and have their unique links to apply for their licences.
+        </p>
+        
+        <p>
+This page contains the application that a company will have to fill.
+        </p>
+        
+        <p>
+Once the company application has been completed and validated you will receive a unique login code for your employee to use, where they can submit their application to register for the full licence.  
+        </p>
+        
+        <h3 class="heading-medium">Driver Information</h3>
+
+        <table>
+  <caption class="heading-small">Company Application</caption>
+  <tbody>
+    <tr>
+      <td>First 6 weeks</td>
+      <td>£109.80 per week</td>
+    </tr>
+      <br>
+    <tr>
+      <td>Next 33 weeks</td>
+      <td>£109.80 per week</td>
+    </tr>
+    <tr>
+      <td>Total estimated pay</td>
+      <td>£4,282.20</td>
+    </tr>
+    <tr>
+      <td>Tell the mother’s employer</td>
+      <td>28 days before they want to start maternity pay</td>
+    </tr>
+  </tbody>
+</table>
+      <br>
+        <input class="button" type="submit" value="Save and continue">
+
+     
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+

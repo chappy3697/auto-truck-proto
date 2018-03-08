@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Licence Application
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+<div class="phase-banner">
+  <p>
+    <strong class="phase-tag">BETA</strong>
+    <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+  </p>
+</div>
+         <a href="javascript:history.back()" class="link-back">Back</a>
+      <h1 class="heading-xlarge">
+            Autonomous Truck Licence
+        <span class="heading-secondary">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+    
+        <h3 class="heading-medium">Company Information</h3>
+        
+  <section id="companiesinformationnumber">      
+      <h4 class="heading-small">Company Registration Number</h4>
+
+        <label class="form-label" for="textarea">
+  
+            <p>
+   Your companies registeration number (CRN) will be needed for this section. <a href="#">Click here to find how.</a>
+</p>
+
+            Your companies registeration number (CRN) will be used here to register your company to the licence. This will be used in the possiblity of a security breach.
+</label>
+        <label class="form-label" for="ni-number">
+  <span class="form-hint">
+    For example, ‘02774693 or XH457390’.
+  </span>
+</label>
+<textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="1"></textarea>
+        
+        </section>
+        <br>
+    
+           <a href="1-4officeaddress.html"><input class="button" type="submit" value="Save and continue" > </a>
+
+     
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+

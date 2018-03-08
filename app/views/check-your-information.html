@@ -1,0 +1,140 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Check your answers
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <a href="javascript:history.back()" class="link-back">Back</a>
+
+      <h1 class="heading-large">
+        Check your answers before sending your application
+      </h1>
+
+
+      <!-- only add a heading for a list if there is more than one list -->
+      <h2 class="heading-medium">
+        Company Information
+      </h2>
+
+      <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
+      <!--   * `cya-questions-short` for short questions -->
+      <!--   * `cya-questions-long` for long questions -->
+      <!--   * none for single group of q&a -->
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Name of store
+          </dt>
+          <dd class="cya-answer">
+            Store Name Example
+          </dd>
+          <dd class="cya-change">
+            <a href="1-1storename.html".>
+              Change<span class="visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Store owner/manager name
+          </dt>
+          <dd class="cya-answer">
+            John Smith
+          </dd>
+          <dd class="cya-change">
+            <a href="1-2managername.html">
+              Change<span class="visually-hidden"> date of birth</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Company Registration Number
+          </dt>
+          <dd class="cya-answer">
+            EX123456
+          </dd>
+          <dd class="cya-change">
+            <a href="1-3CRN.html">
+              Change<span class="visually-hidden"> home address</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Company Office Address
+          </dt>
+          <dd class="cya-answer">
+            39 Acacia Avenue <br>
+            Silhurst<br>
+            SH15 6BP<br>
+          </dd>
+          <dd class="cya-change">
+            <a href="1-4officeaddress.html">
+              Change<span class="visually-hidden"> contact details</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+
+      <h2 class="heading-medium">
+        Truck details
+      </h2>
+
+      <dl class="govuk-check-your-answers cya-questions-short">
+         <div>
+          <dt class="cya-question">
+            Truck Model
+          </dt>
+          <dd class="cya-answer">
+            Volvo A-01
+          </dd>
+          <dd class="cya-change">
+            <a href="1-5truckmodel.html".>
+              Change<span class="visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Number of licences applied for
+          </dt>
+          <dd class="cya-answer">
+            10-20
+          </dd>
+          <dd class="cya-change">
+            <a href="1-6licenceamount.html">
+              Change<span class="visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+
+        
+      </dl>
+
+
+      <h2 class="heading-medium">Now send your application</h2>
+
+      <p class="text">
+        By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.
+      </p>
+
+      <div class="form-group">
+        <a href="confirmation-page" class="button">Accept and send application</a>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

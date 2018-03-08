@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Licence Application
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+<div class="phase-banner">
+  <p>
+    <strong class="phase-tag">BETA</strong>
+    <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+  </p>
+</div>
+         <a href="javascript:history.back()" class="link-back">Back</a>
+      <h1 class="heading-xlarge">
+            Autonomous Truck Licence
+        <span class="heading-secondary">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+
+        <h3 class="heading-medium">Company Information</h3>
+        <section id="companymanagerinfoname">
+
+<h4 class="heading-small">Store Owner/Manager</h4>
+
+ 
+        <div class="form-group">
+  <label class="form-label" for="first-name-2">First name</label>
+  <input class="form-control" id="first-name-2" name="first-name-2" type="text">
+</div>
+<div class="form-group">
+  <label class="form-label" for="last-name-2">Last name</label>
+  <input class="form-control" id="last-name-2" name="last-name-2" type="text">
+</div>
+</section>
+  <section id="companiesinformationnumber">      
+      
+      <br>
+           <a href="1-3CRN.html"><input class="button" type="submit" value="Save and continue" > </a>
+
+     
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+

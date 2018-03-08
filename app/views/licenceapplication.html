@@ -1,0 +1,237 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Licence Application
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+<div class="phase-banner">
+  <p>
+    <strong class="phase-tag">BETA</strong>
+    <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+  </p>
+</div>
+         <a href="javascript:history.back()" class="link-back">Back</a>
+      <h1 class="heading-xlarge">
+            Autonomous Truck Licence
+        <span class="heading-secondary">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+      <p>
+The autonomous truck licence system is currently only in BETA and open to large companies, the eligible companies for this licence have been informed prior and have their unique login to apply for their licences.
+        </p>
+        
+        <p>
+This page contains the application that a company will have to fill.
+        </p>
+        
+        <p>
+Once the company application has been completed and validated you will receive a unique login code for your employee to use, where they can submit their application to register for the full licence.  
+        </p>
+        
+        <h3 class="heading-medium">Company Information</h3>
+
+<section id="companymanagerinfostorename"><h4 class="heading-small">Store ID/Name</h4>
+
+<label class="form-label" for="ni-number">
+  <span class="form-hint">
+This is the name of your store.    <br>
+    For example, ‘Tesco West Jesmond’.
+  </span>
+</label>
+<input class="form-control" id="ni-number" type="text" name="ni-number"></section>
+        <section id="companymanagerinfoname">
+
+<h4 class="heading-small">Store Owner/Manager</h4>
+
+ 
+        <div class="form-group">
+  <label class="form-label" for="first-name-2">First name</label>
+  <input class="form-control" id="first-name-2" name="first-name-2" type="text">
+</div>
+<div class="form-group">
+  <label class="form-label" for="last-name-2">Last name</label>
+  <input class="form-control" id="last-name-2" name="last-name-2" type="text">
+</div>
+</section>
+  <section id="companiesinformationnumber">      <h4 class="heading-small">Company Registration Number</h4>
+
+        
+
+        <label class="form-label" for="textarea">
+  
+            <p>
+   Your companies registeration number (CRN) will be needed for this section. <a href="#">Click here to find how.</a>
+</p>
+
+            Your companies registeration number (CRN) will be used here to register your company to the licence. This will be used in the possiblity of a security breach.
+</label>
+        <label class="form-label" for="ni-number">
+  <span class="form-hint">
+    For example, ‘02774693 or XH457390’.
+  </span>
+</label>
+<textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="1"></textarea>
+        
+        </section>
+        
+        <section id="companiesinformationoffice">
+        <h4 class="heading-small">Company Office Address</h4>
+
+        
+        <label class="form-label" for="textarea">
+  
+            <p>
+   Your companies registered office address will be required in this section. <a href="#">Click here to find how.</a>
+</p>
+
+            Your companies registered office address will be used here to verify with your main office that you have submitted an application.
+</label>
+<textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="3"></textarea>
+        </section>
+      
+        
+        <section id="truckinformationmodel">
+        <h3 class="heading-medium">Truck Information</h3>
+        <div class="form-group">
+<h4 class="heading-small">Truck Model</h4>
+  <select class="form-control" id="select-box" name="select-box">
+    <option>Select Model</option>
+      <option>Volvo A-01</option>
+    <option>Mercedes-Benz Future Truck 2025</option>
+    <option>Daimler Freightliner</option>
+  </select>
+</div>
+        </section>
+
+        <section id="truckinformationlicence"> 
+           <form>
+  <div class="form-group">
+    <fieldset>
+
+      <legend>
+        <h1 class="heading-medium">
+How many licences are you applying for?
+        </h1>
+        <span class="body-text">Select the option that is relevant to your company.</span>
+      </legend>
+
+      <div class="multiple-choice" data-target="1-5">
+        <input id="nationalities-other" name="1-5" type="checkbox" value="1-5">
+        <label for="1-5">1-5</label>
+      </div>
+        
+      <div class="panel panel-border-narrow js-hidden" id="1-5">
+        <p>
+Make sure you are aware of the prices regarding licences and driver applications under this question.
+  </p>
+      </div>
+        
+        <div class="multiple-choice" data-target="6-10">
+        <input id="nationalities-other" name="6-10" type="checkbox" value="6-10">
+        <label for="6-10">6-10</label>
+      </div>
+        
+      <div class="panel panel-border-narrow js-hidden" id="6-10">
+        <p>
+
+  </p>
+      </div>
+        
+      <div class="multiple-choice" data-target="10-20">
+        <input id="nationalities-other" name="10-20" type="checkbox" value="10-20">
+        <label for="10-20">10-20</label>
+      </div>
+        
+      <div class="panel panel-border-narrow js-hidden" id="10-20">
+        <p>
+Make sure you are aware of the prices regarding licences and driver applications under this question.
+  </p>
+      </div>
+        
+          <div class="multiple-choice" data-target="21-30">
+        <input id="nationalities-other" name="21-30" type="checkbox" value="21-30">
+        <label for="21-30">21-30</label>
+      </div>
+        
+      <div class="panel panel-border-narrow js-hidden" id="21-30">
+
+<p>
+Make sure you are aware of the prices regarding licences and driver applications under this question.
+  </p>
+      </div>
+         
+            <div class="multiple-choice" data-target="31">
+        <input id="nationalities-other" name="31+" type="checkbox" value="21-30">
+        <label for="21-30">31+</label>
+      </div>
+        
+      <div class="panel panel-border-narrow js-hidden" id="31">
+          <label class="form-label" for="31"></label>
+  <p>
+Make sure you are aware of the prices regarding licences and driver applications under this question.
+  </p>
+      </div>
+        
+        <details>
+
+  <summary><span class="summary">Licence Costs</span></summary>
+
+  <div class="panel panel-border-narrow">
+
+    <table>
+  <thead>
+    <tr>
+      <th scope="col">Number of licences</th>
+      <th class="numeric" scope="col">Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1-5</th>
+      <td class="numeric">£75 per driver</td>
+    </tr>
+    <tr>
+      <th scope="row">6-10</th>
+      <td class="numeric">£72 per driver</td>
+
+    </tr>
+    <tr>
+      <th scope="row">10-20</th>
+      <td class="numeric">£69 per driver</td>
+
+    </tr>
+    <tr>
+      <th scope="row">21-30</th>
+      <td class="numeric">£66 per driver</td>
+
+    </tr>
+      <tr>
+      <th scope="row">31+</th>
+      <td class="numeric">£63 per driver</td>
+
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+
+</details>
+
+    </fieldset>
+  </div>
+</form>
+           </section>
+           <a href="check-your-information.html"><input class="button" type="submit" value="Save and continue" > </a>
+
+     
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+
