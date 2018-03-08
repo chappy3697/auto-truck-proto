@@ -1,7 +1,11 @@
 {
   "name": "auto-truck-proto",
   "description": "GOVUK prototyping app in Express",
+<<<<<<< HEAD
   "version": "1.0.0",
+=======
+  "version": "6.3.0",
+>>>>>>> parent of 674867c... auto-truck
   "private": true,
   "engines": {
     "node": "8.9.4"
