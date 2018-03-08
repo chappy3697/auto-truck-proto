@@ -1,7 +1,7 @@
 {
   "name": "auto-truck-proto",
   "description": "GOVUK prototyping app in Express",
-  "version": "8.9.4",
+  "version": "1.0.0",
   "private": true,
   "engines": {
     "node": "8.9.4"
@@ -42,7 +42,7 @@
     "require-dir": "^0.3.0",
     "run-sequence": "^1.2.2",
     "serve-favicon": "2.4.2",
-    "standard": "^10.0.2",
+    "standard": "8.9.4",
     "supertest": "^3.0.0",
     "sync-request": "^4.0.3"
   },
