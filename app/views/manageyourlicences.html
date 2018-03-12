@@ -1,0 +1,123 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Required Details
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+        <div class="phase-banner">
+            <p>
+                <strong class="phase-tag">BETA</strong>
+                <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+        </div>
+         <a href="javascript:history.back()" class="link-back">Back</a>
+        
+      <h1 class="heading-xlarge">
+            Autonomous Truck Licence
+        <span class="heading-secondary">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+    
+            
+    <h3 class="heading-medium">How do the licences work?</h3>
+      <p>The company will have to be wary of how many licences that they need as there will only need to be one application for the main licence. Then once the application has been verified the company will be given unique links that can be used to access the portal for the drivers application. When all information is submitted the application will be verified and the driver will be granted a licence for the chosen truck for the licence. If the company purchases a different truck than what is applied for then they will have to purchase a new licence for that fleet of vehicles.
+          
+          <br><br>With each driver licence that is designated the company will be charged for each licence dependant on the chosen number of licences applied for.</p>
+        
+        <details>
+
+  <summary><span class="summary">Licence Costs</span></summary>
+
+  <div class="panel panel-border-narrow">
+
+    <table>
+  <thead>
+    <tr>
+      <<dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Driver Name
+          </dt>
+          <dd class="cya-answer">
+            Jack Green
+          </dd>
+          <dd class="cya-change">
+            <a href="1-1storename.html".>
+              Change<span class="visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+              Driver Licence Number
+          </dt>
+          <dd class="cya-answer">
+            GARDN605109C99LY
+          </dd>
+          <dd class="cya-change">
+            <a href="1-2managername.html">
+              Change<span class="visually-hidden"> date of birth</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Employee Number
+          </dt>
+          <dd class="cya-answer">
+            994223880
+          </dd>
+          <dd class="cya-change">
+            <a href="1-3CRN.html">
+              Change<span class="visually-hidden"> home address</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1-5</th>
+      <td class="numeric">£75 per driver</td>
+    </tr>
+    <tr>
+      <th scope="row">6-10</th>
+      <td class="numeric">£72 per driver</td>
+
+    </tr>
+    <tr>
+      <th scope="row">11-20</th>
+      <td class="numeric">£69 per driver</td>
+
+    </tr>
+    <tr>
+      <th scope="row">21-30</th>
+      <td class="numeric">£66 per driver</td>
+
+    </tr>
+      <tr>
+      <th scope="row">31+</th>
+      <td class="numeric">£63 per driver</td>
+
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+
+</details>
+        
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+
