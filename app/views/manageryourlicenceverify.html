@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Home Page
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+<div class="phase-banner">
+  <p>
+    <strong class="phase-tag">BETA</strong>
+    <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+  </p>
+</div>
+      <h1 class="heading-xlarge">
+        {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+        
+        <p>Are you sure this is the right employee?</p>
+
+  <summary><span class="summary">Jack Green</span></summary>
+  <div class="panel panel-border-narrow">
+    <table>
+  <thead>
+  </thead>
+  <tbody>
+    <tr>
+       <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Driver Name
+          </dt>
+          <dd class="cya-answer">
+            Jack Green
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+              Driver Licence Number
+          </dt>
+          <dd class="cya-answer">
+            GARDN605109C99LY
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Employee Number
+          </dt>
+          <dd class="cya-answer">
+            994223880
+          </dd>
+        </div>
+      </dl>
+    </tr>
+    <tr>
+
+  </tbody>
+</table>
+  </div>
+
+      <p>
+        <a class="button button-start" href="1-1storename.html" role="button">Remove Employee</a>
+      </p>
+
+    </div>
+    <div class="column-third">
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
